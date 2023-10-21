@@ -13,8 +13,14 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <?php  
 
+    require_once '../application/core/autoload.php';
+    use Application\core\App;
+    use Applciation\core\Controller;
+    $app = new App();
+
+    ?>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

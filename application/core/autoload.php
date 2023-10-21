@@ -3,7 +3,7 @@
 spl_autoload_register (function ($filename) {
   $file = '..' . DIRECTORY_SEPARATOR . $filename . '.php';
 
-  if (DIRECTORY_SEPARATOR == '/') :
+  if (DIRECTORY_SEPARATOR === '/') :
     $file = str_replace('\\', '/', $file);
   endif;
 

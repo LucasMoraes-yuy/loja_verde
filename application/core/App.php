@@ -1,5 +1,8 @@
 <?php
 
+namespace Application\core;
+
+
 class App {
     protected $controller = 'HomeController';
     protected $method = 'index';
@@ -7,7 +10,7 @@ class App {
     protected $params = [];
 
     public function __construct() {
-        $URL_ARRAY = $this->parseUrl($URL_ARRAY);
+        $URL_ARRAY = $this->parseUrl();
         $this->getControllerFromUrl($URL_ARRAY);
         $this->getMethodFromUrl($URL_ARRAY);
         $this->getParamsFromUrl($URL_ARRAY);
