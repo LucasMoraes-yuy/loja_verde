@@ -10,7 +10,7 @@ class Controller {
     }
 
     public function view(string $view, $data = []) {
-        require '../Application/views/' . $view . 'php';
+        require '../Application/views/' . $view . '.php';
     }
 
     public function pageNotFound() {
