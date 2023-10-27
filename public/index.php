@@ -14,10 +14,9 @@
 
 <body>
     <?php  
-
     require_once '../application/core/autoload.php';
     use Application\core\App;
-    use Applciation\core\Controller;
+    use Application\core\Controller;
     $app = new App();
 
     ?>

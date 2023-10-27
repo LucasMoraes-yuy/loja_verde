@@ -5,7 +5,7 @@ namespace Application\core;
 class Controller {
     public function model($model) {
         require '../Application/models/' . $model . '.php';
-        $classe = 'Application/models\\' . $model;
+        $classe = 'Application\\models\\' . $model;
         return new $classe();
     }
 
