@@ -1,5 +1,5 @@
 <?php 
-use Application\core\Controller;
+use application\core\Controller;
 
 class ProdutoController extends Controller {
     public function index() {

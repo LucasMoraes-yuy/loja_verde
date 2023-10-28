@@ -1,1 +1,5 @@
-<h1>Olá</h1>
+<?php  
+$base = __DIR__;
+include $base . '/../layout/menu.php';
+?>
+<h1>Produto</h1>

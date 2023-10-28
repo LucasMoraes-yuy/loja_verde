@@ -1,6 +1,7 @@
 <?php 
 $base = __DIR__;
-include $base . '\..\layout\menu.php';
+include $base . '/../layout/menu.php';
+// debug_print_backtrace();
 ?>
 
 <!DOCTYPE html>
@@ -8,9 +9,9 @@ include $base . '\..\layout\menu.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home Page</title>
 </head>
 <body>
-  
+  <h1>olá</h1>
 </body>
 </html>

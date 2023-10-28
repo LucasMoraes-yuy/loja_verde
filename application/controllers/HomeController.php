@@ -1,6 +1,5 @@
 <?php
-
-use Application\core\Controller;
+use application\core\Controller;
 
 class HomeController extends Controller {
     public function index() {
