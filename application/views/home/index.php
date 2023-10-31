@@ -12,6 +12,7 @@ include $base . '/../layout/menu.php';
   <title>Home Page</title>
 </head>
 <body>
-  <h1>olá</h1>
+  <h1>Inicio</h1>
+  <hr>
 </body>
 </html>
