@@ -1,5 +1,7 @@
 <?php 
 use application\core\Controller;
+use application\dao\ProdutoDAO;
+use application\models\Produto;
 
 class ProdutoController extends Controller {
     public function index() {
@@ -13,10 +15,11 @@ class ProdutoController extends Controller {
     public function salvar() {
         $nome = $_POST['nome'];
         $marca = $_POST['marca'];
-        $categoria = $_POST['categoria'];
         $preco = $_POST['preco'];
 
-        print_r($nome);
-        print_r($marca);
+        $produto = new Produto($nome, $marca, $preco);
+
+        $produtoDAO = new ProdutoDAO();
+        $produtoDAO->salvar($produto);
     }
 }
