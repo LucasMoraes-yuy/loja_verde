@@ -8,12 +8,14 @@ class Produto
   private $nome;
   private $marca;
   private $preco;
+  private $imagem;
 
-  public function __construct($nome, $marca, $preco)
+  public function __construct($nome, $marca, $preco, $imagem = null)
   {
     $this->nome = $nome;
     $this->marca = $marca;
     $this->preco = $preco;
+    $this->imagem = base64_encode($imagem);
   }
 
   function getCodigo()
@@ -53,5 +55,11 @@ class Produto
   function setPreco($preco): void
   {
     $this->preco = $preco;
+  }
+  function getImagemBase64() {
+    return base64_encode($this->imagem);
+  }
+  function getImagemBlob() {
+    return $this->imagem;
   }
 }

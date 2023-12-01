@@ -19,7 +19,6 @@
     use application\core\Controller;
     $app = new App();
 
-    debug_print_backtrace();
     ?>
     <!-- Optional JavaScript; choose one of the two! -->
 

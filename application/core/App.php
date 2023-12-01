@@ -19,8 +19,16 @@ class App {
     }
 
     public function parseUrl() {
-        $REQUEST_URI = explode('/', substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), 1));
-        return $REQUEST_URI;
+        // só assim para funcionar no meu
+        $uri = $_SERVER['REQUEST_URI'];
+        $uri = parse_url($uri, PHP_URL_PATH);
+        $uri = trim($uri, '/');
+        return explode('/', $uri);
+
+        // $REQUEST_URI = explode('/', substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), 1));
+        // echo "To aqui";
+        // var_dump($REQUEST_URI);
+        // return $REQUEST_URI;
     }
 
     public function getControllerFromUrl($url) {

@@ -5,7 +5,7 @@ class Conexao {
     private $dbName = "loja";
     private $usuario = "lucas";
     private $senha = "15975348655";
-    private $host = "localhost";
+    private $host = "localhost:3306";
 
     private $conn;
     public function __construct() {
